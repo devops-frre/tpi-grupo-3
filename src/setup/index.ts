@@ -1,0 +1,1 @@
+export { bindDB } from './Database'
