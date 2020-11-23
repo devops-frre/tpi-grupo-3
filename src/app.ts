@@ -17,7 +17,7 @@ app.use(mainRouter)
 
 // TODO: remove
 app.get('/test', (req, res) => {
-  res.send({ project: 'Mascotas' })
+  res.send({ project: 'Devops' })
 })
 
 app.listen(port, () => {
