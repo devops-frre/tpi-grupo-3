@@ -6,7 +6,7 @@ export default {
     user: 'root',
     password: '1234',
     database: 'devops',
-    host: '35.223.194.230',
+    host: '127.0.0.1',
   },
 }
 
