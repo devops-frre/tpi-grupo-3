@@ -20,7 +20,7 @@ env:
   PROJECT_ID: ${{ secrets.GKE_PROJECT }}
   GKE_CLUSTER: devops-cluster
   GKE_ZONE: us-central1-c
-  DEPLOYMENT_NAME: gke-api
+  DEPLOYMENT_NAME: gke-test
   IMAGE: static-site
   ACTIONS_ALLOW_UNSECURE_COMMANDS: true
 
