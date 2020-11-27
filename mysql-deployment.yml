@@ -3,12 +3,12 @@ kind: Service
 metadata:
   name: mysql
   labels:
-    app: gke-test
+    app: devops
 spec:
   ports:
     - port: 3306
   selector:
-    app: gke-test
+    app: devops
     tier: mysql
   clusterIP: None
 ---
@@ -17,7 +17,7 @@ kind: PersistentVolumeClaim
 metadata:
   name: mysql-pv-claim
   labels:
-    app: gke-test
+    app: devops
 spec:
   accessModes:
     - ReadWriteOnce
@@ -30,18 +30,18 @@ kind: Deployment
 metadata:
   name: devops-mysql
   labels:
-    app: gke-test
+    app: devops
 spec:
   selector:
     matchLabels:
-      app: gke-test
+      app: devops
       tier: mysql
   strategy:
     type: Recreate
   template:
     metadata:
       labels:
-        app: gke-test
+        app: devops
         tier: mysql
     spec:
       containers:
