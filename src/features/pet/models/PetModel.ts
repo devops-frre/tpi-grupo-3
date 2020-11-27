@@ -15,7 +15,7 @@ export class PetModel extends Model {
 
   aggressiveness?: number
 
-  age?: number
+  edad?: number
 
   size?: Size
 
@@ -36,7 +36,7 @@ export class PetModel extends Model {
       gender: { type: 'string', enum: [Gender.Female, Gender.Male] },
       castrated: { type: 'boolean' },
       aggressiveness: { type: 'integer' },
-      age: { type: 'integer' },
+      edad: { type: 'integer' },
       size: { type: 'string', enum: [Size.Small, Size.Medium, Size.Big] },
       photo: { type: 'string' },
       chip: { type: 'boolean' },
