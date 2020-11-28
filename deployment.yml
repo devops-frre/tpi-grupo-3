@@ -38,19 +38,31 @@ spec:
           - name: PORT
             value: "3000"
           - name: NODE_ENV
-            value: development
+            value: production
           - name: NODE_CONFIG_DIR
             value: ./src/config
           - name: SERVER_ADDRESS
             value: https://www.example.com
           - name: DB_USER
-            value: root
+            valueFrom:
+              secretKeyRef:
+                name: secret
+                key: dbuser
           - name: DB_PASSWORD
-            value: "1234"
+            valueFrom:
+              secretKeyRef:
+                name: secret
+                key: dbpassword
           - name: DB_NAME
-            value: devops
+            valueFrom:
+              secretKeyRef:
+                name: secret
+                key: dbname
           - name: DB_HOST
-            value: "35.193.116.249"
+            valueFrom:
+                secretKeyRef:
+                  name: secret
+                  key: dbhost  
           ports:
             - containerPort: 5000
           resources:
