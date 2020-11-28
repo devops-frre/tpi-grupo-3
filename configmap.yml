@@ -3,4 +3,4 @@ apiVersion: v1
 metadata:
   name: configmap 
 data:
-  dbhost: 35.193.116.249
+  dbhost: "35.193.116.249"
