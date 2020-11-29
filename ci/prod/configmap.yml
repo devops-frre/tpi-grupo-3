@@ -4,3 +4,4 @@ metadata:
   name: configmap 
 data:
   dbhost: "35.193.116.249"
+  dbname: "devops"
