@@ -18,7 +18,7 @@ on:
 
 env:
   PROJECT_ID: ${{ secrets.GKE_PROJECT }}
-  GKE_CLUSTER: devops-cluster
+  GKE_CLUSTER: devops-cluster-develop
   GKE_ZONE: us-central1-c
   DEPLOYMENT_NAME: gke-test
   IMAGE: static-site
