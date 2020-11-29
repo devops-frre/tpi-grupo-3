@@ -61,6 +61,6 @@ jobs:
     - name: Deploy
       run: |-
         ./kustomize edit set image gcr.io/PROJECT_ID/IMAGE:TAG=gcr.io/$PROJECT_ID/$IMAGE:$GITHUB_SHA
-        ./kustomize build ./ci/prod | kubectl apply -f -
+        ./kustomize build ./ci/prod/kustomization.yml | kubectl apply -f -
         kubectl rollout status deployment/$DEPLOYMENT_NAME
         kubectl get services -o wide
