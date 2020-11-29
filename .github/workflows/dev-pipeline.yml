@@ -8,7 +8,7 @@ on:
 env:
   PROJECT_ID: ${{ secrets.GKE_PROJECT }}
   ACCOUNT_KEY: ${{ secrets.GKE_SA_KEY }}
-  GKE_CLUSTER: devops-cluster-develop
+  GKE_CLUSTER: devops-cluster-devops
   GKE_ZONE: us-central1-c
   DEPLOYMENT_NAME: gke-test
   IMAGE: app
