@@ -1,5 +1,3 @@
-import { petRouter } from "./";
-
 describe('petRouter', () => {
   it('should return all instances when post method on "/" is requested', () => {});
   it('should return a pet when get method on "/:id" is requested', () => {});

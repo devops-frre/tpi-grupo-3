@@ -1,5 +1,3 @@
-import { PetRepository } from "./";
-
 describe('PetRepository', () => {
   it('should get all pet instances with findAll', () => {});
   it('should return a pet given an userId with findById', () => {});
